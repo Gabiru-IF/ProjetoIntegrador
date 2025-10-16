@@ -16,8 +16,13 @@ footer {
 }
 
 .navbar-bio {
-    background-color: #388e3c !important; /* verde médio */
+    background-color: #388e3c !important; 
+    background: linear-gradient(90deg, #2e7a3d 5%, #388e3c 70%);
     box-shadow: 0 2px 8px #c8e6c9;
+
+    background-image: url("data:image/svg+xml;utf8,<svg width='400' height='120' xmlns='http://www.w3.org/2000/svg'><line x1='200' y1='0' x2='200' y2='120' stroke='%23a5d6a7' stroke-width='3'/><line x1='200' y1='20' x2='160' y2='40' stroke='%239ccc65' stroke-width='2'/><line x1='200' y1='40' x2='240' y2='60' stroke='%239ccc65' stroke-width='2'/><line x1='200' y1='60' x2='160' y2='80' stroke='%239ccc65' stroke-width='2'/><line x1='200' y1='80' x2='240' y2='100' stroke='%239ccc65' stroke-width='2'/></svg>");
+    background-repeat: repeat-x;
+    background-size: 400px 120px;
 }
 
 .navbar-bio .navbar-brand {
@@ -29,33 +34,31 @@ footer {
 
 .navbar-bio .navbar-nav {
     display: flex;
-    gap: 24px; /* Espaçamento entre os itens */
+    gap: 24px;
 }
 
 .navbar-bio .nav-link-bio {
     padding: 8px 18px;
-    border-radius: 12px;
+    border-radius: 10px;
     color: #fff !important;
     font-weight: 500;
-    letter-spacing: 1px;
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    letter-spacing: 2px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, border 0.3s;
     box-shadow: none;
-    border: none;
+    border: 2px solid transparent; /* borda sempre presente, mas invisível */
 }
 
 .navbar-bio .nav-link-bio.active {
-    background-color: #43a047 !important; /* verde mais escuro */
+
     color: #fff !important;
     font-weight: bold;
-    box-shadow: 0 2px 8px #c8e6c9;
-    border: 2px solid #81c784;
 }
 
 .navbar-bio .nav-link-bio:hover,
 .navbar-bio .nav-link-bio:focus {
-    background-color: #66bb6a !important; /* verde médio claro */
+    background-color: #66bb6a !important; 
     color: #fff !important;
-    border: 2px solid #a5d6a7;
+    border: 2px solid #a5d6a7; /* só muda a cor da borda */
     box-shadow: 0 2px 8px #c8e6c9;
 }
 
@@ -68,14 +71,15 @@ footer {
 }
 
 h1 {
-    color: #388e3c; /* verde médio */
+    color: #388e3c;
     margin-bottom: 20px;
-    margin-top: 5px; /* mais espaçamento do topo */
+    margin-top: 5px; 
 }
 
 .footer-bio {
     margin-top: auto;
-    background-color: #388e3c !important; /* verde médio */
+    background: linear-gradient(90deg, #2e7a3d 5%, #388e3c 70%);
+    background-color: #388e3c !important;
     color: #fff;
     font-size: 1rem;
     box-shadow: 0 -2px 8px #c8e6c9;
