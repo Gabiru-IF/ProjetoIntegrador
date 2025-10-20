@@ -1,44 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Núcleo, Cromossomos e Câncer</title>
+    <title>Câncer - Biologia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Biologia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="/ProjetoIntegrador/src/index.html">Início</a>
-            <a class="nav-link" href="/ProjetoIntegrador/src/nucleo.html">Núcleo</a>
-            <a class="nav-link" href="/ProjetoIntegrador/src/cromossomos.html">Cromossomos</a>
-            <a class="nav-link" href="/ProjetoIntegrador/src/cancer.html">Câncer</a>
+    <nav class="navbar navbar-expand-lg navbar-bio">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="/ProjetoIntegrador/src/imagens/AnimalCrossingLeaf-nobg.png" alt="Logo" width="50" height=auto class="d-inline-block align-text-top" style=" filter: brightness(0) invert(1);">
+                <a class="navbar-brand" style="margin-left: 0px; font-size: 20px; font-weight: bold;">Biologia</a>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link nav-link-bio" aria-current="page" href="index.html">Início</a>
+                    <a class="nav-link nav-link-bio" href="nucleo.html">Núcleo</a>
+                    <a class="nav-link nav-link-bio" href="cromossomos.html">Cromossomos</a>
+                    <a class="nav-link nav-link-bio active" href="cancer.html">Câncer</a>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
     </nav>
 
-    Câncer
-    
-    <footer class="bg-body-tertiary text-center text-lg-start">
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-    Feito por: Gabriel Moreira, Ágata Freire, Rafael Vínnicus e Helloyza Vitorino
+    <!-- Carousel menor com overlay do texto "Câncer" -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-small" data-bs-ride="carousel" style="overflow: visible !important;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://s2-galileu.glbimg.com/I8XT7In9P-bKNHbJ2MqE-2mZB5U=/0x0:1024x512/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2025/w/Z/idzhy9SwCMCqoIppamOA/dna-strands.jpg" class="d-block w-100 carousel-img" alt="slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://videocdn.cdnpk.net/videos/762e091f-da67-509d-873a-9e39c767ea9c/horizontal/thumbnails/large.jpg" class="d-block w-100 carousel-img" alt="slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/030/601/460/non_2x/cells-or-micro-organisms-or-microscopic-life-zoom-in-ai-generative-free-photo.jpg" class="d-block w-100 carousel-img" alt="slide 3">
+            </div>
+        </div>
+
+        <div class="carousel-overlay">
+            <div class="overlay-content">
+                <h1>Câncer</h1>
+                <p>O câncer é uma doença causada pelo crescimento descontrolado de células. Nesta página você encontrará informações sobre os mecanismos celulares que levam ao desenvolvimento tumoral e abordagens de prevenção e tratamento.</p>
+            </div>
+        </div>
     </div>
+
+    <div class="container-md mb-4 mt-4">
+        <p class="text-center">O câncer surge quando alterações genéticas e ambientais fazem com que células normais adquiram a capacidade de proliferar de forma descontrolada, invadir tecidos e, às vezes, metastizar para outras partes do corpo.</p>
+    </div>
+
+    <footer class="footer-bio text-center text-lg-start">
+        <div class="text-center p-3">
+            Feito por: Gabriel Moreira, Ágata Freire, Rafael Vinicus e Helloyza Vitorino
+        </div>
     </footer>
 
-
-
-
-
-
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

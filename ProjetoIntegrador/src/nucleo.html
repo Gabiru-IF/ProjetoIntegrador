@@ -1,43 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Núcleo, Cromossomos e Câncer</title>
+    <title>Núcleo - Biologia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Biologia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="/ProjetoIntegrador/src/index.html">Início</a>
-            <a class="nav-link" href="/ProjetoIntegrador/src/nucleo.html">Núcleo</a>
-            <a class="nav-link" href="/ProjetoIntegrador/src/cromossomos.html">Cromossomos</a>
-            <a class="nav-link" href="/ProjetoIntegrador/src/cancer.html">Câncer</a>
+    <nav class="navbar navbar-expand-lg navbar-bio">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="/ProjetoIntegrador/src/imagens/AnimalCrossingLeaf-nobg.png" alt="Logo" width="50" height=auto class="d-inline-block align-text-top" style=" filter: brightness(0) invert(1);">
+                <a class="navbar-brand" style="margin-left: 0px; font-size: 20px; font-weight: bold;">Biologia</a>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link nav-link-bio" aria-current="page" href="index.html">Início</a>
+                    <a class="nav-link nav-link-bio active" href="nucleo.html">Núcleo</a>
+                    <a class="nav-link nav-link-bio" href="cromossomos.html">Cromossomos</a>
+                    <a class="nav-link nav-link-bio" href="cancer.html">Câncer</a>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
     </nav>
-    
-    Núcleo
 
-    <footer class="bg-body-tertiary text-center text-lg-start">
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-    Feito por: Gabriel Moreira, Ágata Freire, Rafael Vínnicus e Helloyza Vitorino
+    <!-- Carousel menor com overlay do texto "Núcleo" -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-small" data-bs-ride="carousel" style="position: relative; z-index: 10; overflow: visible !important;">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://saci.org.br/wp-content/uploads/2025/06/o-incrivel-mundo-das-celulas.jpg" class="d-block w-100 carousel-img" alt="slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://conceitosdomundo.pt/wp-content/uploads/2021/10/nucleo-celular-2.jpg" alt="slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://static.vecteezy.com/system/resources/previews/030/601/460/non_2x/cells-or-micro-organisms-or-microscopic-life-zoom-in-ai-generative-free-photo.jpg" class="d-block w-100 carousel-img" alt="slide 3">
+            </div>
+        </div>
+
+        <div class="carousel-overlay">
+            <div class="overlay-content" style="position:relative; z-index:1000;">
+                <h1 class="text-center">Núcleo</h1>
+                <p>O núcleo é o centro de controle da célula, onde está armazenado o material genético. Nesta página você encontrará informações sobre sua estrutura e funções.</p>
+            </div>
+        </div>
     </div>
+
+    <div class="container-md mb-4 mt-4" style="position: relative; z-index: 5;">
+        <h1 class="text-center">Estrutura do Núcleo</h1>
+
+        <p>O núcleo é uma organelo delimitado por membrana presente em células eucarióticas, considerado o "centro de comando" da célula, pois abriga a informação genética e controla as atividades celulares.</p>
+        <img src="https://s4.static.brasilescola.uol.com.br/be/2020/07/nucleo-celular.jpg" style="display: block; margin: 20px auto; max-width: 100%; height: auto;">
+        <p>O núcleo não é apenas uma bolinha no interior da célula, mas sim uma estrutura complexa que pode ser dividida em partes importantes:</p>
+        <ul>
+            <li>Envoltório Nuclear: Membrana dupla que envolve o núcleo e controla a entrada e saída de substâncias.</li>
+            <li>Lâmina Nuclear: Uma rede de filamentos que dá suporte estrutural ao núcleo e ajuda a organizar a cromatina.</li>
+            <li>Nucleoplasma: Um líquido viscoso que preenche o interior do núcleo e contém íons, enzimas, nucleotídeos e proteínas solúveis, funcionando como meio de sustentação das estruturas nucleares.</li>
+            <li>Cromatina: Material genético formado por DNA e proteínas, que se condensa para formar os cromossomos durante a divisão celular.</li>
+            <li>Nucleolo: Região onde ocorre a produção de ribossomos.</li>
+            <li>Poro Nuclear: Aberturas na membrana nuclear que permitem a troca de materiais entre o núcleo e o citoplasma.</li>
+            <li>Ribossomos: Responsáveis pela síntese de proteínas, podem estar associados ao retículo endoplasmático ou livres no citoplasma.</li>
+        </ul>
+    </div>
+
+    <div class="container-md mb-4 mt-4">
+        <h1 class="text-center">Funções do Núcleo</h1>
+
+        <p>O núcleo desempenha várias funções essenciais para a célula, incluindo:</p>
+        <ul>
+            <li>Armazenamento do Material Genético: O núcleo contém o DNA, que carrega as instruções para o funcionamento celular.</li>
+            <li>Regulação da Atividade Celular: Controla quais genes são expressos, influenciando a produção de proteínas e o comportamento da célula.</li>
+            <li>Divisão Celular: Durante a divisão celular, o núcleo se replica para garantir que cada célula filha receba uma cópia do material genético.</li>
+            <li>Síntese de RNA: O núcleo é o local onde ocorre a transcrição do DNA em RNA, que é posteriormente traduzido em proteínas no citoplasma.</li>
+            <li>Participar das respostas celulares a estímulos externos e internos.</li>
+        </ul>        
+    </div>
+
+    <div class="container-md mb-4 mt-4">
+        <h1 class="text-center">Características Importantes</h1>
+
+        <p>O núcleo possui várias características essenciais para a célula, incluindo:</p>
+        <ul>
+            <li>O núcleo é apenas presente em células eucarióticas.</li>
+            <li>O núcleo é dinâmico, pois seu conteúdo e organização mudam conforme a fase do ciclo celular.</li>
+            <li>O tamanho e a forma do núcleo também são indicativos da atividade celular. Por exemplo: células muito ativas em síntese de proteínas tendem a ter núcleos grandes.</li>
+            <li>O número de núcleos pode variar, algumas células têm núcleo único, outras, como células musculares, podem ter vários núcleos.</li>
+        </ul>        
+    </div>
+
+    <div class="container-md mb-4 mt-4">
+        <h1 class="text-center">Vídeo</h1>
+        <p>A seguir há um vídeo explicativo sobre o núcleo celular:</p>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/3Z6b2f5c1pA" title="YouTube video" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer class="footer-bio text-center text-lg-start">
+        <div class="text-center p-3">
+            Feito por: Gabriel Moreira, Ágata Freire, Rafael Vinicus e Helloyza Vitorino
+        </div>
     </footer>
 
-
-
-
-
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

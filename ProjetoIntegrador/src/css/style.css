@@ -91,19 +91,41 @@ h1 {
     box-shadow: 0 -2px 8px #c8e6c9;
 }
 
-/* Carousel menor e overlay */
-.carousel-small .carousel-img {
-    height: 320px;           /* altura fixa menor */
-    object-fit: cover;
-    max-height: 40vh;
+.carousel-small {
+  max-width: 100%;
+  overflow: hidden;
 }
 
-@media (max-width: 768px) {
-    .carousel-small .carousel-img {
-        height: 220px;
-        max-height: 35vh;
-    }
+.carousel-small .carousel-item {
+  height: 320px;
+  background: linear-gradient(90deg, #e8f5e9, #f1f8e9);
 }
+
+.carousel-small .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: optimizeQuality;
+  transform: translateZ(0); /* força renderização em GPU */
+  backface-visibility: hidden;
+  filter: contrast(110%) saturate(115%) brightness(1.05); /* melhora nitidez */
+  -webkit-transform: translateZ(0);
+}
+
+.carousel-small .carousel-item img.img-fluid {
+  max-width: none !important;
+  height: 100% !important;
+}
+
+
+
+@media (max-width: 768px) {
+  .carousel-small .carousel-item {
+    height: 220px;
+  }
+}
+
 
 /* overlay centralizado sobre o carousel */
 .carousel-overlay {
