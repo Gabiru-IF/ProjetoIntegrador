@@ -1,14 +1,39 @@
-html, body {
+html {
     height: 100%;
-    background-color: #f4fff4; /* verde muito claro, remete à célula */
-    color: #234e23; /* verde escuro para texto */
-    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    background-color: #f4fff4; /* cor base */
+    color: #234e23;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    position: relative;
+}
+
+body {
+    background-image: url('../imagens/background_img_loop.jpg');
+    background-repeat: repeat;
+    background-size: 300px;
+    background-attachment: scroll;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(244, 255, 244, 0.9); /* mesma cor do fundo, mas com transparência */
+    z-index: -1;
+    pointer-events: none;
+}
+
+.main-content {
+    flex: 1;
 }
 
 footer {
@@ -92,8 +117,61 @@ h1 {
 }
 
 .carousel-small {
-  max-width: 100%;
-  overflow: hidden;
+    max-width: 100%;
+    overflow: visible;
+    position: relative;
+    margin-bottom: 20px;
+    height: 360px;
+    z-index: 1;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.overlay-content {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 25px 35px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    pointer-events: auto;
+}
+
+.carousel-overlay h1 {
+    color: white;
+    margin: 0 0 15px 0;
+    font-size: clamp(1.5rem, 2.6vw, 2.2rem);
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-overlay p {
+    margin: 0;
+    font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+    line-height: 1.6;
+    color: rgba(255,255,255,0.92);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-small .carousel-item {
@@ -121,60 +199,16 @@ h1 {
 
 
 @media (max-width: 768px) {
-  .carousel-small .carousel-item {
-    height: 220px;
+  .carousel-small {
+    height: 300px;
   }
 }
 
 
-/* overlay centralizado sobre o carousel */
-.carousel-overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
-    z-index: 2;
-}
-
-.overlay-content {
-    pointer-events: auto;
-    /* fundo sutil: leve escurecimento com transparência para preservar a imagem */
-    background: linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.18));
-    color: #fff;
-    padding: 12px 18px;
-    border-radius: 10px;
-    max-width: 880px;
-    width: calc(100% - 40px);
-    text-align: center;
-    box-shadow: 0 8px 22px rgba(0,0,0,0.18); /* sombra suave */
-    backdrop-filter: blur(3px) saturate(105%);
-    -webkit-backdrop-filter: blur(3px) saturate(105%);
-    border: 1px solid rgba(255,255,255,0.05); /* contorno muito leve */
-    transform: translateY(-4%);
-}
-
-.overlay-content h1 {
-    margin: 0 0 8px 0;
-    font-size: clamp(1.5rem, 2.6vw, 2.2rem);
-    line-height: 1.05;
-    color: #fff;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.55); /* sombra para legibilidade, porém sutil */
-}
-
-.overlay-content p {
-    margin: 0;
-    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
-    color: rgba(255,255,255,0.92);
-    text-shadow: 0 3px 10px rgba(0,0,0,0.45);
-}
-
 /* responsividade: reduzir padding e tamanho em telas pequenas */
 @media (max-width: 576px) {
     .overlay-content {
-        padding: 10px 12px;
-        transform: translateY(-2%);
+        padding: 15px 20px;
     }
     .overlay-content h1 {
         font-size: clamp(1.3rem, 5.2vw, 1.8rem);
@@ -182,9 +216,4 @@ h1 {
     .overlay-content p {
         font-size: clamp(0.9rem, 3.5vw, 0.98rem);
     }
-}
-
-/* Garante que o container do carousel seja relativo para posicionamento do overlay */
-.carousel {
-    position: relative;
 }
