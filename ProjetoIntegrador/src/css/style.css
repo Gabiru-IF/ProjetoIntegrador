@@ -10,6 +10,7 @@ body {
     color: #234e23;
     font-family: 'Segoe UI', Arial, sans-serif;
     position: relative;
+    overflow-x: hidden;
 }
 
 body {
@@ -215,5 +216,40 @@ h1 {
     }
     .overlay-content p {
         font-size: clamp(0.9rem, 3.5vw, 0.98rem);
+    }
+    
+    /* Ajustar caixas de conteúdo em celulares - com margem nas bordas */
+    .container-md {
+        padding: 16px;
+        margin: 0 20px 20px 0;
+        border-radius: 8px;
+    }
+    
+    /* Ajustar tamanho de texto em celulares */
+    h1 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    /* Ajustar tamanho de imagens (exceto carousel) - maiores */
+    .container-md img {
+        max-width: 350px;
+        height: auto;
+        margin: 40px auto;
+        border-radius: 4px;
+        display: block;
+        object-fit: contain;
+    }
+    
+    
+    /* Ajustar tamanho do vídeo */
+    .ratio {
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
