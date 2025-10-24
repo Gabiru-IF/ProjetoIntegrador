@@ -1,0 +1,8 @@
+node_modules/
+package.json
+package-lock.json
+.vscode/
+.git/
+src/videos/
+*.log
+.DS_Store
