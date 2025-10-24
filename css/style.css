@@ -14,7 +14,7 @@ body {
 }
 
 body {
-    background-image: url('../imagens/background_img_loop.jpg');
+    background-image: url('/ProjetoIntegrador/src/imagens/background_img_loop.jpg');
     background-repeat: repeat;
     background-size: 300px;
     background-attachment: scroll;
