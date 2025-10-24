@@ -63,12 +63,44 @@
   btn.type = 'button';
   btn.setAttribute('aria-label', 'Voltar ao topo');
   btn.innerHTML = `
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
       <path d="M12 4l-7 7h4v6h6v-6h4z"/>
     </svg>
   `;
+
+  // Estilos inline de fallback para garantir posição/tamanho mesmo se o CSS não carregar
+  const baseStyle = [
+    'position:fixed',
+    'right:16px',
+    'bottom:16px',
+    'width:42px',
+    'height:42px',
+    'border-radius:50%','display:flex','align-items:center','justify-content:center',
+    'background:#388e3c','color:#fff','border:2px solid #a5d6a7',
+    'box-shadow:0 4px 12px rgba(0,0,0,0.25)',
+    'z-index:1040',
+    'opacity:0','transform:translateY(8px) scale(0.96)',
+    'transition:opacity .35s cubic-bezier(0.22,1,0.36,1),transform .35s cubic-bezier(0.22,1,0.36,1),background .2s ease',
+    'pointer-events:none',
+    'cursor:pointer'
+  ].join(';');
+  btn.style.cssText = baseStyle;
+
+  function applySizing() {
+    const isMobile = window.matchMedia('(max-width: 576px)').matches;
+    const size = isMobile ? 40 : 42;
+    const icon = isMobile ? 19 : 20;
+    btn.style.width = size + 'px';
+    btn.style.height = size + 'px';
+    const svg = btn.querySelector('svg');
+    if (svg) {
+      svg.setAttribute('width', String(icon));
+      svg.setAttribute('height', String(icon));
+    }
+  }
   document.addEventListener('DOMContentLoaded', () => {
     document.body.appendChild(btn);
+    applySizing();
     // Avalia visibilidade inicial após montar o botão
     onScroll();
   });
@@ -79,8 +111,15 @@
   const onScroll = () => {
     if (window.scrollY > threshold) {
       btn.classList.add('show');
+      // Fallback inline se o CSS não aplicar .show
+      btn.style.opacity = '1';
+      btn.style.transform = 'translateY(0) scale(1)';
+      btn.style.pointerEvents = 'auto';
     } else {
       btn.classList.remove('show');
+      btn.style.opacity = '0';
+      btn.style.transform = 'translateY(8px) scale(0.96)';
+      btn.style.pointerEvents = 'none';
     }
   };
 
@@ -99,10 +138,12 @@
   // Recalcula o limiar em mudanças de viewport/orientação
   window.addEventListener('resize', () => {
     threshold = getThreshold();
+    applySizing();
     onScroll();
   });
   window.addEventListener('orientationchange', () => {
     threshold = getThreshold();
+    applySizing();
     onScroll();
   });
 
