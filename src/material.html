@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material - Biologia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-bio">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="imagens/AnimalCrossingLeaf-nobg.png" alt="Logo" width="50" height=auto class="d-inline-block align-text-top" style=" filter: brightness(0) invert(1);">
+                <a class="navbar-brand" style="margin-left: 0px; font-size: 20px; font-weight: bold;">Biologia</a>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link nav-link-bio" href="../index.html">Início</a>
+                    <a class="nav-link nav-link-bio" href="nucleo.html">Núcleo</a>
+                    <a class="nav-link nav-link-bio" href="cromossomos.html">Cromossomos</a>
+                    <a class="nav-link nav-link-bio" href="cancer.html">Câncer</a>
+                    <a class="nav-link nav-link-bio active" href="material.html">Material</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Imagem estática com overlay -->
+    <div class="carousel-small">
+        <img src="https://static.vecteezy.com/system/resources/previews/011/023/973/non_2x/gradient-foliage-background-cartoon-foliage-leaves-wallpaper-free-vector.jpg" class="d-block w-100 carousel-img" alt="Material">
+        <div class="carousel-overlay">
+            <div class="overlay-content">
+                <h1>Material Didático</h1>
+                <p>Acesse documentos e materiais de apoio para aprofundar seus conhecimentos sobre Biologia, Núcleo, Cromossomos e Câncer.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-md mb-4 mt-4" style="position: relative; z-index: 5;">
+        <h1 class="text-center">Downloads de Documentos</h1>
+        <p class="text-center">Aqui você encontra materiais em PDF para complementar seus estudos. Clique nos botões abaixo para fazer o download:</p>
+        
+        <div class="row mt-5">
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card shadow-sm" style="width: 100%; max-width: 300px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: #388e3c;">📄 Núcleo Celular</h5>
+                        <p class="card-text">Slides sobre o Núcleo Celular.</p>
+                        <a href="/src/arquivos/Slide 01 - Núcleo.pdf" class="btn btn-success" download>
+                            <i class="bi bi-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card shadow-sm" style="width: 100%; max-width: 300px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: #388e3c;">📄 Cromossomos</h5>
+                        <p class="card-text">Slides sobre os cromossomos.</p>
+                        <a href="/src/arquivos/Slide 02 - Cromossomos.pdf" class="btn btn-success" download>
+                            <i class="bi bi-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 d-flex justify-content-center">
+                <div class="card shadow-sm" style="width: 100%; max-width: 300px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: #388e3c;">📄 Câncer</h5>
+                        <p class="card-text">Slides sobre o Câncer.</p>
+                        <a href="/src/arquivos/Slide 03 - Câncer.pdf" class="btn btn-success" download>
+                            <i class="bi bi-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-bio text-center text-lg-start">
+        <div class="text-center p-3">
+            Feito por: Gabriel Moreira, Ágata Freire, Rafael Vinicus e Helloyza Vitorino
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>
