@@ -1,40 +1,40 @@
 // Dados das questões para cada tipo de exercício
 const exerciciosData = {
     nucleo: [
-        { id: 'q1', correta: 'b', explicacao: 'O núcleo abriga o DNA e regula quais genes serão expressos, controlando a produção de proteínas e, consequentemente, as atividades celulares.' },
-        { id: 'q2', correta: 'b', explicacao: 'O envoltório nuclear é formado por duas membranas contínuas com o retículo endoplasmático e repletas de poros que controlam o tráfego de moléculas.' },
-        { id: 'q3', correta: 'b', explicacao: 'O nucléolo reúne DNA ribossômico, RNA e proteínas para montar as subunidades dos ribossomos.' },
-        { id: 'q4', correta: 'b', explicacao: 'Cromatina é o complexo de DNA, histonas e outras proteínas estruturais que permite compactação e regulação gênica.' },
-        { id: 'q5', correta: 'b', explicacao: 'A duplicação do DNA ocorre na fase S do ciclo celular, garantindo que cada célula filha receba o material genético completo.' },
-        { id: 'q6', correta: 'b', explicacao: 'Os poros nucleares possuem proteínas que reconhecem sinais específicos, permitindo a passagem seletiva de RNAs e proteínas nucleares.' },
-        { id: 'q7', correta: 'b', explicacao: 'Eucromatina é menos condensada e acessível às enzimas de transcrição, estando associada a genes que estão sendo expressos.' },
-        { id: 'q8', correta: 'b', explicacao: 'Hemácias maduras expulsam o núcleo durante a diferenciação; sem DNA, não conseguem transcrever novos RNAs ou sintetizar proteínas.' },
-        { id: 'q9', correta: 'b', explicacao: 'O cariótipo exibe o número e a morfologia dos cromossomos de uma espécie, organizados em pares homólogos.' },
-        { id: 'q10', correta: 'b', explicacao: 'O nucleoplasma é um fluido rico em enzimas, nucleotídeos e íons que sustenta as estruturas nucleares e permite as reações metabólicas.' }
+        { id: 'q1', correta: 'b', explicacao: 'o núcleo contém o DNA, onde estão os genes que regulam todas as funções celulares, controlando o metabolismo e a síntese de proteínas.' },
+        { id: 'q2', correta: 'b', explicacao: 'a carioteca é uma dupla membrana com poros nucleares que controlam a entrada e saída de moléculas, como RNA e proteínas.' },
+        { id: 'q3', correta: 'b', explicacao: 'na mitose, a carioteca se desorganiza para permitir a separação dos cromossomos, que se condensam a partir da cromatina.' },
+        { id: 'q4', correta: 'b', explicacao: 'o nucléolo é responsável pela síntese de RNA ribossômico (rRNA) e pela formação das subunidades dos ribossomos, que depois vão para o citoplasma.' },
+        { id: 'q5', correta: 'c', explicacao: 'células procarióticas (bactérias) não possuem carioteca; seu DNA fica disperso no citoplasma (nucleoide).' },
+        { id: 'q6', correta: 'b', explicacao: 'os cromossomos são formados por DNA + proteínas histonas, responsáveis pela compactação e organização do material genético.' },
+        { id: 'q7', correta: 'c', explicacao: 'o DNA contém os genes que codificam as proteínas, determinando o funcionamento e as características do organismo.' },
+        { id: 'q8', correta: 'c', explicacao: 'os poros nucleares permitem a passagem de moléculas como RNA mensageiro (mRNA), que sai do núcleo para ser traduzido no citoplasma.' },
+        { id: 'q9', correta: 'b', explicacao: 'o nucleoplasma, também chamado de carioplasma, é o fluido interno do núcleo. Ele contém íons, enzimas e nucleotídeos, servindo de meio para as atividades metabólicas nucleares e sustentando a cromatina e o nucléolo.' },
+        { id: 'q10', correta: 'a', explicacao: 'a cromatina é o DNA em sua forma descondensada e ativa (permitindo a transcrição). Durante a divisão, ela se condensa formando os cromossomos.' }
     ],
     cromossomos: [
-        { id: 'q1', correta: 'b', explicacao: 'Células somáticas humanas são diploides e possuem 46 cromossomos, organizados em 23 pares homólogos.' },
-        { id: 'q2', correta: 'b', explicacao: 'Os cromossomos armazenam o DNA e garantem que a informação genética seja transmitida para as células-filhas.' },
-        { id: 'q3', correta: 'b', explicacao: 'A síndrome de Down decorre da presença de três cópias do cromossomo 21 em vez de duas.' },
-        { id: 'q4', correta: 'b', explicacao: 'Cromátides-irmãs são cópias idênticas produzidas na replicação do DNA e permanecem unidas pelo centrômero até a divisão.' },
-        { id: 'q5', correta: 'b', explicacao: 'O centrômero é a região onde as cromátides se unem e por onde as fibras do fuso se ligam para separá-las.' },
-        { id: 'q6', correta: 'b', explicacao: 'Na metáfase, os cromossomos se alinham no plano equatorial, permitindo a separação simétrica das cromátides.' },
-        { id: 'q7', correta: 'b', explicacao: 'Células haploides possuem um único conjunto de cromossomos (n), enquanto diploides possuem dois conjuntos (2n).' },
-        { id: 'q8', correta: 'b', explicacao: 'Os 22 pares de autossomos carregam genes para características gerais; o par sexual (X e Y) determina o sexo biológico em humanos.' },
-        { id: 'q9', correta: 'b', explicacao: 'Crossing-over é a troca de segmentos entre cromátides de cromossomos homólogos na meiose, aumentando a variabilidade genética.' },
-        { id: 'q10', correta: 'd', explicacao: 'Trissomia altera o número de cromossomos (aneuploidia), enquanto deleção, duplicação e translocação são alterações estruturais.' }
+        { id: 'q1', correta: 'c', explicacao: 'os cromossomos são formados por DNA associado a proteínas histonas, que ajudam na compactação e organização do material genético dentro do núcleo.' },
+        { id: 'q2', correta: 'b', explicacao: 'ao se condensar, o DNA torna-se mais compacto e protegido, o que facilita a separação correta dos cromossomos durante a mitose e a meiose.' },
+        { id: 'q3', correta: 'c', explicacao: 'as células somáticas humanas são diploides (2n) e possuem 46 cromossomos, organizados em 23 pares — 22 pares autossômicos e 1 par sexual.' },
+        { id: 'q4', correta: 'c', explicacao: 'a mitose mantém o número de cromossomos (2n → 2n), enquanto a meiose reduz o número pela metade (2n → n), originando células haploides, como os gametas.' },
+        { id: 'q5', correta: 'c', explicacao: 'o 23º par de cromossomos é o sexual — XX em mulheres e XY em homens —, responsável por determinar o sexo biológico.' },
+        { id: 'q6', correta: 'c', explicacao: 'o centrômero é a região que mantém unidas as duas cromátides-irmãs, sendo essencial na movimentação dos cromossomos durante a divisão celular.' },
+        { id: 'q7', correta: 'b', explicacao: 'os telômeros protegem as extremidades dos cromossomos contra degradação. A cada divisão celular, eles se encurtam, o que está relacionado ao envelhecimento celular.' },
+        { id: 'q8', correta: 'b', explicacao: 'o número 47 indica uma aneuploidia — alteração numérica nos cromossomos. Um exemplo é a Síndrome de Down, causada por uma trissomia no cromossomo 21.' },
+        { id: 'q9', correta: 'a', explicacao: 'na metáfase, os cromossomos alinhados no plano equatorial permitem a separação igualitária das cromátides durante a anáfase.' },
+        { id: 'q10', correta: 'c', explicacao: 'os cromossomos homólogos formam pares que possuem genes para as mesmas características (por exemplo, cor dos olhos), sendo um de origem materna e outro paterna.' }
     ],
     cancer: [
-        { id: 'q1', correta: 'b', explicacao: 'Câncer envolve divisão celular descontrolada com capacidade de invadir tecidos e formar metástases.' },
-        { id: 'q2', correta: 'b', explicacao: 'O tabagismo é um dos principais fatores de risco modificáveis para diversos cânceres, especialmente pulmão.' },
-        { id: 'q3', correta: 'b', explicacao: 'Metástase ocorre quando células tumorais migram do tumor primário para outros órgãos via sangue ou linfa.' },
-        { id: 'q4', correta: 'c', explicacao: 'Quando ativados por mutações, proto-oncogenes tornam-se oncogenes que estimulam proliferação celular excessiva.' },
-        { id: 'q5', correta: 'a', explicacao: 'O teste de Papanicolau detecta alterações pré-cancerosas no colo do útero, permitindo tratamento precoce.' },
-        { id: 'q6', correta: 'b', explicacao: 'Tumores benignos permanecem localizados, têm crescimento lento e não invadem tecidos ou formam metástases.' },
-        { id: 'q7', correta: 'c', explicacao: 'Hábitos saudáveis como não fumar, praticar exercícios e comer bem reduzem o risco de vários cânceres.' },
-        { id: 'q8', correta: 'a', explicacao: 'A vacina contra HPV previne infecções por tipos oncogênicos do vírus, reduzindo câncer de colo uterino e outros.' },
-        { id: 'q9', correta: 'd', explicacao: 'Feridas persistentes e nódulos de crescimento rápido são sinais de alerta e devem ser avaliados clínicamente.' },
-        { id: 'q10', correta: 'b', explicacao: 'A quimioterapia emprega fármacos sistêmicos que atingem células em divisão acelerada, incluindo as tumorais.' }
+        { id: 'q1', correta: 'c', explicacao: 'O câncer resulta do crescimento celular descontrolado, com divisão contínua e perda da regulação normal do ciclo celular.' },
+        { id: 'q2', correta: 'b', explicacao: 'Tumores malignos têm capacidade de invadir tecidos adjacentes e de formar metástases, enquanto benignos permanecem localizados.' },
+        { id: 'q3', correta: 'b', explicacao: 'Agentes mutagênicos podem causar alterações no DNA que desregulam o ciclo celular, favorecendo o desenvolvimento do câncer.' },
+        { id: 'q4', correta: 'a', explicacao: 'Proto-oncogenes podem se tornar oncogenes e estimular divisão celular excessiva; genes supressores de tumor normalmente controlam o ciclo celular e a apoptose.' },
+        { id: 'q5', correta: 'c', explicacao: 'A metástase é a disseminação de células malignas para tecidos distantes, formando novos focos tumorais.' },
+        { id: 'q6', correta: 'b', explicacao: 'O exame Papanicolau identifica alterações celulares precoces, permitindo intervenção antes do desenvolvimento do câncer.' },
+        { id: 'q7', correta: 'b', explicacao: 'A radiação UV provoca mutações no DNA das células da pele, aumentando o risco de câncer.' },
+        { id: 'q8', correta: 'b', explicacao: 'A quimioterapia envolve drogas que atacam células que se dividem rapidamente, característica típica das células cancerígenas.' },
+        { id: 'q9', correta: 'c', explicacao: 'A prevenção primária busca impedir o surgimento do câncer reduzindo fatores de risco ambientais e comportamentais.' },
+        { id: 'q10', correta: 'c', explicacao: 'Células cancerígenas geralmente perdem diferenciação, ou seja, não desempenham adequadamente a função original do tecido.' }
     ]
 };
 
