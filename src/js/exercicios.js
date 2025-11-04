@@ -17,7 +17,7 @@ const exerciciosData = {
         { id: 'q2', correta: 'b', explicacao: 'ao se condensar, o DNA torna-se mais compacto e protegido, o que facilita a separação correta dos cromossomos durante a mitose e a meiose.' },
         { id: 'q3', correta: 'c', explicacao: 'as células somáticas humanas são diploides (2n) e possuem 46 cromossomos, organizados em 23 pares — 22 pares autossômicos e 1 par sexual.' },
         { id: 'q4', correta: 'c', explicacao: 'a mitose mantém o número de cromossomos (2n → 2n), enquanto a meiose reduz o número pela metade (2n → n), originando células haploides, como os gametas.' },
-        { id: 'q5', correta: 'c', explicacao: 'o 23º par de cromossomos é o sexual — XX em mulheres e XY em homens —, responsável por determinar o sexo biológico.' },
+        { id: 'q5', correta: 'b', explicacao: 'o 23º par de cromossomos é o sexual — XX em mulheres e XY em homens —, responsável por determinar o sexo biológico.' },
         { id: 'q6', correta: 'c', explicacao: 'o centrômero é a região que mantém unidas as duas cromátides-irmãs, sendo essencial na movimentação dos cromossomos durante a divisão celular.' },
         { id: 'q7', correta: 'b', explicacao: 'os telômeros protegem as extremidades dos cromossomos contra degradação. A cada divisão celular, eles se encurtam, o que está relacionado ao envelhecimento celular.' },
         { id: 'q8', correta: 'b', explicacao: 'o número 47 indica uma aneuploidia — alteração numérica nos cromossomos. Um exemplo é a Síndrome de Down, causada por uma trissomia no cromossomo 21.' },
